@@ -35,7 +35,7 @@ for(let i=0 ; i<data.length ; i++ ){
 
 }
 
-console.log(data)
+// console.log(data)   // // // call fn t get result
 
 
 
@@ -71,7 +71,7 @@ for(let i=0 ; i<arr.length ; i++){
 
 
 
-console.log(arr)
+// console.log(arr)     // // // call fn t get result
 
 
 
@@ -116,7 +116,7 @@ function selectionSortingDeccending(data){
 
 }
 
-selectionSortingDeccending(data)
+// selectionSortingDeccending(data)     // // // call fn t get result
 
 
 
@@ -138,10 +138,13 @@ function selectionSortingAAeccending(data){
 
         // console.log(minIndex)
 
-        let temp = data[i]
-        data[i] = data[maxIndex]
-        data[maxIndex] = temp
+        // // // Swapping value ( 1st way)
+        // let temp = data[i]
+        // data[i] = data[maxIndex]
+        // data[maxIndex] = temp
 
+        // // // (2nd way)
+        [data[i] ,data[maxIndex] ] =  [data[maxIndex]  , data[i] ]
         // console.log(i ,data)
 
     }
@@ -151,8 +154,19 @@ function selectionSortingAAeccending(data){
 
 }
 
-selectionSortingAAeccending(data)
+// selectionSortingAAeccending(data)      // // // call fn t get result
 
 
 
 
+
+// // // // Swapping the value here ---->
+
+let a = 5;
+let b = 6;
+
+[a , b] = [b , a]       // // // This a advance technic to swap the value. 
+
+console.log("Swap the value :-")
+console.log("A -->"+a)
+console.log("B -->"+b)
